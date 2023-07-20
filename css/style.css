@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+#checkbox {
+    display: none;
+}
+.toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: 0.5s;
+}
+.bars {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(243, 156, 18);
+    border-radius: 4px;
+}
+#bar2 {
+    transition-duration: 0.8s;
+}
+#bar1, #bar3 {
+    width: 70%;
+}
+#checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: 0.5s;
+}
+#checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
+}
+#checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: 0.5s;
+}
+#checkbox:checked + .toggle {
+    transition-duration: 0.5s;
+    transform: rotate(180deg);
+}
+header {
+    background-image: url("../images/Banar.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    padding: 10px;
+}
+.navbar-brand {
+    width: 120px;
+    margin-left: 30px;
+}
+.navbar-nav {
+    margin-left: 45%;
+}
+.nav-item {
+    margin-right: 15px;
+}
+.nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 0.4s ease-in-out 0s;
+    padding: 0px 25px;
+}
+.nav-link:hover {
+    border-radius: 30% !important;
+    color: rgb(0, 0, 0) !important;
+    background-color: #ffc61a !important;
+}
+.Hero-content{
+    padding-top: 10%;
+    text-align: center;
+}
+.Hero-content h6{
+    font-size: 25px;
+    color: #ffc61a;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.Hero-content h1{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+.Hero-content p{
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+/*------------cab-book---------------- */
+.cab-book{
+    padding-top: 100px;
+    background-color: #ffc61a;
+    min-height: 90vh;
+    position: relative;
+}
+.hero{
+    position: absolute;
+    left: 21%;
+    top: -24%;
+    transform: translate(21%, -24%);
+}
+.cab-content{
+    padding: 0  70px;
+}
+.cab-content h5{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.cab-content h1{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.cab-content p{
+    font-size: 14px;
+}
+.btn-Read{
+    margin-top: 30px;
+    border: 1px solid;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    font-weight: 600;
+    transition: .5s all ease-in-out;
+}
+.btn-Read:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.Form{
+    background-color: #fff;
+    padding: 0px;
+}
+.Form h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+}
+.Form h1 span{
+    color: #ffc61a;
+}
+.table{  
+    padding: 10px;
+}
+.form-control{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    color: #000;
+}
+.btn-submit{
+    margin-top: 30px;
+    border: 1px solid #ffc61a;
+    padding: 6px 105px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .5s all ease-in-out;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+.btn-submit:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* ---------------Tariffs------------- */
+
+.Tariffs{
+    margin: 45px;
+}
+.T-header{  
+    margin-bottom: 10%;
+}
+.T-header h4{
+    text-align: center;
+    color: #ffc61a;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.T-header h1{
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.Tariffs-1{   
+    justify-content: space-evenly;
+}
+.Tariffs-content{
+    background-color: #f5f4f2;
+    border: 1px solid transparent;
+}
+.Tariffs-content img{
+    height: 120px;
+    width: 270px;
+    transform: translate(0px, -65px);
+}
+.Tariffs-content h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.Tariffs-content p{ 
+    font-size: 14px;
+    text-align: center;
+}
+.Tariffs-content h1{
+    color: #ffc61a;
+    padding: 5px;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.btn-redmore{
+    border: 2px solid #ffc61a;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5px 20px;
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 18px;
+    background-color: #ffc61a ;
+}
+.btn-redmore:hover{
+    color: #fff !important;
+    background-color: #000!important;
+}
+.Tariffs-content:hover{
+    background-color: #ffc61a;
+    color: #000;
+}
+.Tariffs-content:hover h1{
+    color: #000;
+}
+.Tariffs-content:hover .btn-redmore{
+    color: #fff !important;
+    background-color: #000!important;
+}
+
+/* ----------------Do-best------------- */
+
+.Do-best{
+    background-image: url(../images/Banar-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 85vh;
+    background-color: #000;
+    padding: 40px;
+}
+.Best{
+    display: flex;
+    padding: 18px 40px;
+    }
+.Best-icon{
+    margin-top: 30px;
+    margin-right: 15px;
+}
+.Best-icon a{
+    color: #000 !important;
+    background-color: #ffc61a;
+    font-size: 16px;
+    padding: 12px 16px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.Best-content h1{
+    font-size: 20px;
+    color: #ffc61a;
+}
+.Best-content p{
+    font-size: 14px;
+    color: #fff;
+}
+.red-more{   
+    text-align: center;
+}
+.btn-read-more{
+    color: #ffffff;
+    border: 1px solid #ffc61a;
+    border-radius: 5px;
+    padding: 7px 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.btn-read-more:hover{
+    color: #ffffff !important;
+    background-color: #ffc61a !important;
+}
+/* --------------- Download--------------- */
+.Download{
+    min-height: 80vh;
+}
+.Download-header{
+    text-align: center;
+    padding: 50px;
+}
+.Download-header h4{
+    font-size: 20px;
+    color: #ffc61a;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.Download-header h1{
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.Download-content h6{ 
+    font-size: 20px;  
+    color: #000;  
+    font-weight: 700;
+}
+.Download-content p{    
+    font-size: 14px;  
+    padding: 20px 0;   
+    padding-right: 51px;
+}
+.batton{
+    display: flex;
+}
+.phone{  
+    margin-left: 8%;
+}
+
+/* ---------------Client----------------- */
+
+.Client{
+    background-image: url(../images/Banar-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 70vh;
+    padding-top: 50px;
+}
+.header{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.header h4{
+    color: #ffc61a;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.header h1{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.Clients{
+    background-color: #000;
+    margin: 15px;
+    border-radius: 30px;
+}
+.Clients p{
+    font-size: 14px;
+    padding: 10px 11px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.clinent-details{
+    display: flex;
+    padding: 10px;
+}
+.clinent-img{
+    width: 50px;
+}
+.clinent-info{
+    padding-left: 25px;
+}
+.clinent-info h3{
+    font-size: 18px;
+    color: #ffc61a;
+    text-transform: uppercase;
+}
+.clinent-info h6{   
+    font-size: 14px;   
+    color: #fff;  
+    text-transform: uppercase;
+}
+.owl-dots {
+    position: absolute;
+    left: 50%;
+    bottom: -48px;
+    transform: translateY(-50%);
+}
+.owl-dots .owl-dot span {
+    background: rgb(183, 183, 183);
+    width: 13px;
+    display: block;
+    border-radius: 50px;
+    height: 12px;
+    margin-left: 10px;
+}
+.owl-dots .owl-dot.active span {
+    background-color: rgb(65, 65, 65);
+}
+/* ---------------Ready----------------- */
+.Ready{
+    background-color: #ffc61a;
+}
+.Ready h4{
+    text-align: center;  
+    font-size: 30px;   
+    padding-top: 30px;
+}
+.Ready h1{  
+    text-align: center; 
+    font-size: 40px;   
+    font-weight: 800; 
+    padding-bottom: 40px; 
+    letter-spacing: 4px;
+}
+/* ----------------Footer ----------*/
+footer{
+    background-color: #000;
+    padding-top: 50px;
+}
+.footer-content{
+    padding: 0% 7%;
+}
+.footer-content h4{
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 40%;
+    position: relative;
+}
+.footer-content p{
+    font-size: 14px;
+    color: #fff;
+}
+.social-icon{
+    margin-top: 30px;
+}
+.social-icon ul{
+    display: flex;
+    padding: 0;
+}
+.social-icon ul li{
+    list-style: none;
+    color: #fff;
+}
+.social-icon ul li a{
+    color: #ffc61a;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.footer-content h5{
+    font-size: 16px;
+    color: #ffc61a;
+    padding-top: 30px;
+}
+.footer-content h5 span{
+    color: #fff;
+    font-size: 20px;
+    padding-left: 40px;
+}
+.footer-content h5 strong{
+    color: #fff;
+    font-size: 25px;
+    padding-left: 76px;
+}
+.footer-content ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-content ul li{
+    color: #fff;
+    font-size: 14px;
+    line-height: 38px;
+}
+.footer-content ul li span{
+    color: #fff;
+    padding-right: 28px;
+}
+.footer-content ul li strong{
+    color: #fff;
+    padding-left: 45px;
+    font-weight: 400;
+}
+.footer-content h4::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 74px;
+    border: 3px solid #ffc61a;
+    width: 190px;
+    height: 0px;
+}
+footer h6{
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 30px;
+}

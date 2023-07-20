@@ -1,0 +1,75 @@
+@media (max-width: 1024px) {
+}
+@media (max-width: 991px) {
+
+}
+@media (max-width: 768px) {
+    .hero {
+        display: none;
+    }
+    .Tariffs-content img {
+        display: none;
+    }
+
+}
+@media (max-width: 575px){
+    .hero {
+        display: none;
+    }
+    .Tariffs-content img {
+        display: none;
+    }
+    .Tariffs-content {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .btn-redmore {
+        margin-left: 90px;
+    }
+    .Client {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 425px) {
+    .hero {
+        display: none;
+    }
+    .Hero-content h1 {
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+    .Hero-content {
+        padding-top: 36%;
+    }
+    .btn-Read{
+        margin-left: 42px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .cab-content h1 {
+        font-size: 20px;
+    }
+    .btn-submit {
+        padding: 6px 134px;
+    }
+    .Tariffs-content img {
+        display: none;
+    }
+    .Tariffs-content {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .Ready h4 {
+        font-size: 26px;
+    }
+    .Ready h1 {
+        font-size: 35px;
+    }
+    
+}
+@media (max-width: 375px) {
+
+
+}
+@media (max-width: 320px) {
+}
